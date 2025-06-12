@@ -1,0 +1,6 @@
+# 忽略大模型参数文件
+tpm-cloud/backup/model.enc
+tpm-cloud/backup/model.guff
+tpm-cloud/backup/model_tpm2.enc
+tpm-cloud/models/model.dec
+tpm-cloud/models/model.gguf

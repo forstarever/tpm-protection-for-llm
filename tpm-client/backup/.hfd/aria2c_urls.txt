@@ -1,0 +1,9 @@
+https://hf-mirror.com/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/resolve/main/model.safetensors	
+ gid=19dd16fdaf16e380
+ dir=
+ out=model.safetensors
+ split=4
+ file-allocation=none
+ continue=true
+ max-connection-per-server=4
+ min-split-size=1048576

@@ -1,0 +1,218 @@
+debug:tcti:src/tss2-tcti/tctildr-dl.c:299:tctildr_get_tcti() name: "(null)", conf: "(null)" 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:245:tctildr_get_default() Attempting to connect using standard TCTI: Access libtss2-tcti-default.so 
+trace:tcti:src/tss2-tcti/tctildr-dl.c:136:tcti_from_file() Attempting to load TCTI file: libtss2-tcti-default.so 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:92:handle_from_name() Could not load TCTI file: "libtss2-tcti-default.so": libtss2-tcti-default.so: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:107:handle_from_name() Could not load TCTI file "libtss2-tcti-default.so": libtss2-tcti-libtss2-tcti-default.so.so.0: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:120:handle_from_name() Failed to load TCTI for name "libtss2-tcti-default.so": libtss2-tcti-libtss2-tcti-default.so.so: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:251:tctildr_get_default() Failed to load standard TCTI number 0 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:245:tctildr_get_default() Attempting to connect using standard TCTI: Access libtss2-tcti-tabrmd.so 
+trace:tcti:src/tss2-tcti/tctildr-dl.c:136:tcti_from_file() Attempting to load TCTI file: libtss2-tcti-tabrmd.so.0 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:92:handle_from_name() Could not load TCTI file: "libtss2-tcti-tabrmd.so.0": libtss2-tcti-tabrmd.so.0: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:107:handle_from_name() Could not load TCTI file "libtss2-tcti-tabrmd.so.0": libtss2-tcti-libtss2-tcti-tabrmd.so.0.so.0: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:120:handle_from_name() Failed to load TCTI for name "libtss2-tcti-tabrmd.so.0": libtss2-tcti-libtss2-tcti-tabrmd.so.0.so: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:251:tctildr_get_default() Failed to load standard TCTI number 1 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:245:tctildr_get_default() Attempting to connect using standard TCTI: Access libtss2-tcti-device.so.0 with /dev/tpmrm0 
+trace:tcti:src/tss2-tcti/tctildr-dl.c:136:tcti_from_file() Attempting to load TCTI file: libtss2-tcti-device.so.0 
+trace:tcti:src/tss2-tcti/tctildr.c:109:tcti_from_info() Attempting to load TCTI info 
+trace:tcti:src/tss2-tcti/tctildr.c:116:tcti_from_info() Loaded TCTI info named: tcti-device 
+trace:tcti:src/tss2-tcti/tctildr.c:117:tcti_from_info() TCTI description: TCTI module for communication with Linux kernel interface. 
+trace:tcti:src/tss2-tcti/tctildr.c:118:tcti_from_info() TCTI config_help: Path to TPM character device. Default value is: TCTI_DEVICE_DEFAULT 
+trace:tcti:src/tss2-tcti/tctildr.c:61:tcti_from_init() Initializing TCTI for config: /dev/tpmrm0 
+debug:tcti:src/tss2-tcti/tcti-device.c:449:Tss2_Tcti_Device_Init() Trying to open specified TCTI device file /dev/tpmrm0 
+trace:tcti:src/tss2-tcti/tcti-device.c:456:Tss2_Tcti_Device_Init() Successfully opened specified TCTI device file /dev/tpmrm0 
+debug:tcti:src/tss2-tcti/tcti-device.c:461:Tss2_Tcti_Device_Init() Probe device for partial response read support 
+debug:tcti:src/util/io.c:94:write_all() writing 12 bytes starting at 0x7ffe1d3737a4 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 12 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:473:Tss2_Tcti_Device_Init() Command sent, reading header 
+debug:tcti:src/tss2-tcti/tcti-device.c:492:Tss2_Tcti_Device_Init() Header read, reading rest of response 
+debug:tcti:src/tss2-tcti/tcti-device.c:523:Tss2_Tcti_Device_Init() Read the rest - partial read supported 
+debug:tcti:src/tss2-tcti/tctildr.c:98:tcti_from_init() Initialized TCTI for config: /dev/tpmrm0 
+info:tcti:src/tss2-tcti/tctildr.c:125:tcti_from_info() Initialized TCTI named: tcti-device 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:162:tcti_from_file() Initialized TCTI file: libtss2-tcti-device.so.0 
+debug:tcti:src/tss2-tcti/tcti-device.c:114:tcti_device_transmit() sending 332 byte command buffer: (size=332): 
+0000: 80010000014c000001670000013a0001  .....L...g...:..
+0010: 000b000300b20020837197674484b3f8  .........q.gD...
+0020: 1a90cc8d46a5d724fd52d76e06520b64  ....F..$.R.n.R.d
+0030: f2a1da1b331469aa0006008000430010  ....3.i......C..
+0040: 0800000000000100fc04d9fb83343ba1  .............4;.
+0050: ae8e6c97b34b858cf9141c237ae8d72e  ..l..K.....#z...
+0060: a03d799c501e505d4b7ceed8bfb0613f  .=y.P.P]K|....a?
+0070: c6b2a589d7766f010b5234b7cbb237e8  .....vo..R4...7.
+0080: bc81fd6c1b76610077f44bb4d44e6aa0  ...l.va.w.K..Nj.
+0090: 425f6ee329185728658bcb2594413b97  B_n.).W(e..%.A;.
+00a0: 04d78440cb5e3ee2833cc5a4ca8994b6  ...@.^>..<......
+00b0: 64fe57212a69defb2e55488e334e0b52  d.W!*i...UH.3N.R
+00c0: 86fa03e25a2e69cd11a976a3e94676d8  ....Z.i...v..Fv.
+00d0: 282f7c6cc7347e0e9b3c84d6c579020e  (/|l.4~..<...y..
+00e0: 9315c78b632299b998243004365477c1  ....c"...$0.6Tw.
+00f0: 83aec575a9d28701cfd3674be0848613  ...u......gK....
+0100: 228f308158ab4c8186ff4a1992c23b08  ".0.X.L...J...;.
+0110: a40dca52de552a049a56c10e229daed9  ...R.U*..V.."...
+0120: b51de2d736092dbc35ea97f2aeb9d89b  ....6.-.5.......
+0130: a240313899d129a69d6230abb83c802a  .@18..)..b0..<.*
+0140: 6f0b2a5d657715f540000007          o.*]ew..@...
+debug:tcti:src/util/io.c:94:write_all() writing 332 bytes starting at 0x5fc1536106d0 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 332 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:183:tcti_device_receive() Partial read - reading response size 
+debug:tcti:src/tss2-tcti/tcti-device.c:203:tcti_device_receive() Partial read - received header 
+debug:tcti:src/tss2-tcti/tcti-device.c:216:tcti_device_receive() Partial read - received response size 50. 
+debug:tcti:src/tss2-tcti/tcti-device.c:274:tcti_device_receive() Response Received (size=50): 
+0000: 8001000000320000000080ffffff0022  .....2........."
+0010: 000babff27ddc544db9102006e43ff88  ....'..D....nC..
+0020: 0bb1c21427bcaf85d0ccdfb339b2ab67  ....'.......9..g
+0030: 8c26                              .&
+trace:tcti:src/tss2-tcti/tcti-common.c:139:header_unmarshal() Parsing header from buffer: 0x5fc1536106d0 
+debug:tcti:src/tss2-tcti/tcti-device.c:288:tcti_device_receive() Size from header 50 bytes read 50 
+debug:tcti:src/tss2-tcti/tcti-device.c:114:tcti_device_transmit() sending 84 byte command buffer: (size=84): 
+0000: 8001000000540000016880ffffff0020  .....T...h......
+0010: 3b418308475d40df4c97351564e3dc84  ;A..G]@.L.5.d...
+0020: 7dd88d474ca616b42e27248d88acd4ba  }..GL....'$.....
+0030: 0022000bcb69a4ec856506a10b4f235a  ."...i...e...O#Z
+0040: 996ebeaefeb6c88f0bd7a33b6471fca7  .n.........;dq..
+0050: 6d35877a                          m5.z
+debug:tcti:src/util/io.c:94:write_all() writing 84 bytes starting at 0x5fc1536106d0 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 84 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:183:tcti_device_receive() Partial read - reading response size 
+debug:tcti:src/tss2-tcti/tcti-device.c:203:tcti_device_receive() Partial read - received header 
+debug:tcti:src/tss2-tcti/tcti-device.c:216:tcti_device_receive() Partial read - received response size 338. 
+debug:tcti:src/tss2-tcti/tcti-device.c:274:tcti_device_receive() Response Received (size=338): 
+0000: 80010000015200000000004400203ea3  .....R.....D..>.
+0010: 82b9109d2eca0d7bf1da31f15b8093d1  .......{..1.[...
+0020: 8cb35a826b47afca4b29758b427b93e2  ..Z.kG..K)u.B{..
+0030: efd725dd4746c2f5fc96a56d2ecda28a  ..%.GF.....m....
+0040: d6caa303c7aec2f55a0fd18d9fbcf469  ........Z......i
+0050: 0100a6232ecbde32ff00d32e8cf601e5  ...#...2........
+0060: c4ef8958a97fe528917c20c934552a30  ...X...(.|..4U*0
+0070: 312e0294cebcb59526b733f244f55412  1.......&.3.D.T.
+0080: 41de6aa17f77822ad6dd216a8be7f7c6  A.j..w.*..!j....
+0090: b2e97b2e4204125eeebf299e550cedaf  ..{.B..^..).U...
+00a0: 580f8901029aaa20d1b85978bcc38280  X.........Yx....
+00b0: c4e9280b7c2a220bcb4d9bef6fd818d4  ..(.|*"..M..o...
+00c0: d292b69e60656d6f373d347cee2bf472  ....`emo7=4|.+.r
+00d0: e7f9811763464a72eb97d10204064cdf  ....cFJr......L.
+00e0: dd2815f5bffc18a818669edcd076b782  .(.......f...v..
+00f0: e52e130494d54043c540fd049b01c861  ......@C.@.....a
+0100: 76a3aefc20108ae4d6276079b2415131  v........'`y.AQ1
+0110: a62d39b7f6d0633d38c46631b5b1a313  .-9...c=8.f1....
+0120: 4f9b9ee19987cd93be1ff5ca245d9d46  O...........$].F
+0130: 0b44af02ba84ae3abb9b7ff1c05661fd  .D.....:.....Va.
+0140: 754fed6252ae434750a82cab25c20dec  uO.bR.CGP.,.%...
+0150: d6af                              ..
+trace:tcti:src/tss2-tcti/tcti-common.c:139:header_unmarshal() Parsing header from buffer: 0x5fc1536106d0 
+debug:tcti:src/tss2-tcti/tcti-device.c:288:tcti_device_receive() Size from header 338 bytes read 338 
+debug:tcti:src/tss2-tcti/tcti-device.c:114:tcti_device_transmit() sending 14 byte command buffer: (size=14): 
+0000: 80010000000e0000016580ffffff      .........e....
+debug:tcti:src/util/io.c:94:write_all() writing 14 bytes starting at 0x5fc1536106d0 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 14 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:183:tcti_device_receive() Partial read - reading response size 
+debug:tcti:src/tss2-tcti/tcti-device.c:203:tcti_device_receive() Partial read - received header 
+debug:tcti:src/tss2-tcti/tcti-device.c:216:tcti_device_receive() Partial read - received response size 10. 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:299:tctildr_get_tcti() name: "(null)", conf: "(null)" 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:245:tctildr_get_default() Attempting to connect using standard TCTI: Access libtss2-tcti-default.so 
+trace:tcti:src/tss2-tcti/tctildr-dl.c:136:tcti_from_file() Attempting to load TCTI file: libtss2-tcti-default.so 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:92:handle_from_name() Could not load TCTI file: "libtss2-tcti-default.so": libtss2-tcti-default.so: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:107:handle_from_name() Could not load TCTI file "libtss2-tcti-default.so": libtss2-tcti-libtss2-tcti-default.so.so.0: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:120:handle_from_name() Failed to load TCTI for name "libtss2-tcti-default.so": libtss2-tcti-libtss2-tcti-default.so.so: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:251:tctildr_get_default() Failed to load standard TCTI number 0 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:245:tctildr_get_default() Attempting to connect using standard TCTI: Access libtss2-tcti-tabrmd.so 
+trace:tcti:src/tss2-tcti/tctildr-dl.c:136:tcti_from_file() Attempting to load TCTI file: libtss2-tcti-tabrmd.so.0 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:92:handle_from_name() Could not load TCTI file: "libtss2-tcti-tabrmd.so.0": libtss2-tcti-tabrmd.so.0: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:107:handle_from_name() Could not load TCTI file "libtss2-tcti-tabrmd.so.0": libtss2-tcti-libtss2-tcti-tabrmd.so.0.so.0: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:120:handle_from_name() Failed to load TCTI for name "libtss2-tcti-tabrmd.so.0": libtss2-tcti-libtss2-tcti-tabrmd.so.0.so: cannot open shared object file: No such file or directory 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:251:tctildr_get_default() Failed to load standard TCTI number 1 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:245:tctildr_get_default() Attempting to connect using standard TCTI: Access libtss2-tcti-device.so.0 with /dev/tpmrm0 
+trace:tcti:src/tss2-tcti/tctildr-dl.c:136:tcti_from_file() Attempting to load TCTI file: libtss2-tcti-device.so.0 
+trace:tcti:src/tss2-tcti/tctildr.c:109:tcti_from_info() Attempting to load TCTI info 
+trace:tcti:src/tss2-tcti/tctildr.c:116:tcti_from_info() Loaded TCTI info named: tcti-device 
+trace:tcti:src/tss2-tcti/tctildr.c:117:tcti_from_info() TCTI description: TCTI module for communication with Linux kernel interface. 
+trace:tcti:src/tss2-tcti/tctildr.c:118:tcti_from_info() TCTI config_help: Path to TPM character device. Default value is: TCTI_DEVICE_DEFAULT 
+trace:tcti:src/tss2-tcti/tctildr.c:61:tcti_from_init() Initializing TCTI for config: /dev/tpmrm0 
+debug:tcti:src/tss2-tcti/tcti-device.c:449:Tss2_Tcti_Device_Init() Trying to open specified TCTI device file /dev/tpmrm0 
+trace:tcti:src/tss2-tcti/tcti-device.c:456:Tss2_Tcti_Device_Init() Successfully opened specified TCTI device file /dev/tpmrm0 
+debug:tcti:src/tss2-tcti/tcti-device.c:461:Tss2_Tcti_Device_Init() Probe device for partial response read support 
+debug:tcti:src/util/io.c:94:write_all() writing 12 bytes starting at 0x7fffa55393b4 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 12 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:473:Tss2_Tcti_Device_Init() Command sent, reading header 
+debug:tcti:src/tss2-tcti/tcti-device.c:492:Tss2_Tcti_Device_Init() Header read, reading rest of response 
+debug:tcti:src/tss2-tcti/tcti-device.c:523:Tss2_Tcti_Device_Init() Read the rest - partial read supported 
+debug:tcti:src/tss2-tcti/tctildr.c:98:tcti_from_init() Initialized TCTI for config: /dev/tpmrm0 
+info:tcti:src/tss2-tcti/tctildr.c:125:tcti_from_info() Initialized TCTI named: tcti-device 
+debug:tcti:src/tss2-tcti/tctildr-dl.c:162:tcti_from_file() Initialized TCTI file: libtss2-tcti-device.so.0 
+debug:tcti:src/tss2-tcti/tcti-device.c:114:tcti_device_transmit() sending 332 byte command buffer: (size=332): 
+0000: 80010000014c000001670000013a0001  .....L...g...:..
+0010: 000b000300b20020837197674484b3f8  .........q.gD...
+0020: 1a90cc8d46a5d724fd52d76e06520b64  ....F..$.R.n.R.d
+0030: f2a1da1b331469aa0006008000430010  ....3.i......C..
+0040: 0800000000000100fc04d9fb83343ba1  .............4;.
+0050: ae8e6c97b34b858cf9141c237ae8d72e  ..l..K.....#z...
+0060: a03d799c501e505d4b7ceed8bfb0613f  .=y.P.P]K|....a?
+0070: c6b2a589d7766f010b5234b7cbb237e8  .....vo..R4...7.
+0080: bc81fd6c1b76610077f44bb4d44e6aa0  ...l.va.w.K..Nj.
+0090: 425f6ee329185728658bcb2594413b97  B_n.).W(e..%.A;.
+00a0: 04d78440cb5e3ee2833cc5a4ca8994b6  ...@.^>..<......
+00b0: 64fe57212a69defb2e55488e334e0b52  d.W!*i...UH.3N.R
+00c0: 86fa03e25a2e69cd11a976a3e94676d8  ....Z.i...v..Fv.
+00d0: 282f7c6cc7347e0e9b3c84d6c579020e  (/|l.4~..<...y..
+00e0: 9315c78b632299b998243004365477c1  ....c"...$0.6Tw.
+00f0: 83aec575a9d28701cfd3674be0848613  ...u......gK....
+0100: 228f308158ab4c8186ff4a1992c23b08  ".0.X.L...J...;.
+0110: a40dca52de552a049a56c10e229daed9  ...R.U*..V.."...
+0120: b51de2d736092dbc35ea97f2aeb9d89b  ....6.-.5.......
+0130: a240313899d129a69d6230abb83c802a  .@18..)..b0..<.*
+0140: 6f0b2a5d657715f540000007          o.*]ew..@...
+debug:tcti:src/util/io.c:94:write_all() writing 332 bytes starting at 0x5e38438f76d0 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 332 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:183:tcti_device_receive() Partial read - reading response size 
+debug:tcti:src/tss2-tcti/tcti-device.c:203:tcti_device_receive() Partial read - received header 
+debug:tcti:src/tss2-tcti/tcti-device.c:216:tcti_device_receive() Partial read - received response size 50. 
+debug:tcti:src/tss2-tcti/tcti-device.c:274:tcti_device_receive() Response Received (size=50): 
+0000: 8001000000320000000080ffffff0022  .....2........."
+0010: 000babff27ddc544db9102006e43ff88  ....'..D....nC..
+0020: 0bb1c21427bcaf85d0ccdfb339b2ab67  ....'.......9..g
+0030: 8c26                              .&
+trace:tcti:src/tss2-tcti/tcti-common.c:139:header_unmarshal() Parsing header from buffer: 0x5e38438f76d0 
+debug:tcti:src/tss2-tcti/tcti-device.c:288:tcti_device_receive() Size from header 50 bytes read 50 
+debug:tcti:src/tss2-tcti/tcti-device.c:114:tcti_device_transmit() sending 84 byte command buffer: (size=84): 
+0000: 8001000000540000016880ffffff0020  .....T...h......
+0010: 3b418308475d40df4c97351564e3dc84  ;A..G]@.L.5.d...
+0020: 7dd88d474ca616b42e27248d88acd4ba  }..GL....'$.....
+0030: 0022000b289e3d274221fe0a0cde8405  ."..(.='B!......
+0040: bd56341fae2b336b5317867939980321  .V4..+3kS..y9..!
+0050: 87017ef0                          ..~.
+debug:tcti:src/util/io.c:94:write_all() writing 84 bytes starting at 0x5e38438f76d0 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 84 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:183:tcti_device_receive() Partial read - reading response size 
+debug:tcti:src/tss2-tcti/tcti-device.c:203:tcti_device_receive() Partial read - received header 
+debug:tcti:src/tss2-tcti/tcti-device.c:216:tcti_device_receive() Partial read - received response size 338. 
+debug:tcti:src/tss2-tcti/tcti-device.c:274:tcti_device_receive() Response Received (size=338): 
+0000: 8001000001520000000000440020bac1  .....R.....D....
+0010: 9119526e3d8b943c014e0d89f1e3ca5d  ..Rn=..<.N.....]
+0020: 261e8adfa018aa2b8fb49b34d78ea0ec  &......+...4....
+0030: d4f503964d77e1395c85c3607892cd4d  ....Mw.9\..`x..M
+0040: 4fdab1948c62bc55202aeee21ba72bf2  O....b.U.*....+.
+0050: 01001226dc478c0e97c3b21d73871386  ...&.G......s...
+0060: 528e4f23c956dc8c08c7f925ab311ed1  R.O#.V.....%.1..
+0070: 9b1169b19cf5b7385b143038ce41da56  ..i....8[.08.A.V
+0080: a78af87ef0bb669d24f9347f79ca90bc  ...~..f.$.4.y...
+0090: c3f7cd26dbca8ed57638c2b4255dd624  ...&....v8..%].$
+00a0: 073fad3edbd45150bc0375a1c9215160  .?.>..QP..u..!Q`
+00b0: 5dfb69a821565437ebb3f608d4d64273  ].i.!VT7......Bs
+00c0: bea156d0893bf519caafb78ad737bdfc  ..V..;.......7..
+00d0: a6d1d9ea34881d55ee302618079a6bff  ....4..U.0&...k.
+00e0: 5d53b4a46c87f6e1e9cf783aa45404cb  ]S..l.....x:.T..
+00f0: bdfac216658a01c63018cc2a998caf23  ....e...0..*...#
+0100: b61a3eba65704cb0979919240384fbf8  ..>.epL....$....
+0110: ecb66cd9c3fdad832de0a7c67bb22e03  ..l.....-...{...
+0120: 4ffe4e3c37964ff0d1b74c8a329a9bff  O.N<7.O...L.2...
+0130: e72ba95e0eebc6d694b50c7023f8f493  .+.^.......p#...
+0140: daddbf2df09f6895bb8e4ff3e10009bf  ...-..h...O.....
+0150: 7639                              v9
+trace:tcti:src/tss2-tcti/tcti-common.c:139:header_unmarshal() Parsing header from buffer: 0x5e38438f76d0 
+debug:tcti:src/tss2-tcti/tcti-device.c:288:tcti_device_receive() Size from header 338 bytes read 338 
+debug:tcti:src/tss2-tcti/tcti-device.c:114:tcti_device_transmit() sending 14 byte command buffer: (size=14): 
+0000: 80010000000e0000016580ffffff      .........e....
+debug:tcti:src/util/io.c:94:write_all() writing 14 bytes starting at 0x5e38438f76d0 to fd 5 
+debug:tcti:src/util/io.c:108:write_all() wrote 14 bytes to fd 5 
+debug:tcti:src/tss2-tcti/tcti-device.c:183:tcti_device_receive() Partial read - reading response size 
+debug:tcti:src/tss2-tcti/tcti-device.c:203:tcti_device_receive() Partial read - received header 
+debug:tcti:src/tss2-tcti/tcti-device.c:216:tcti_device_receive() Partial read - received response size 10. 

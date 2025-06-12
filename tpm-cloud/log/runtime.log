@@ -1,0 +1,24 @@
+2025-05-21T10:30:12Z: ===== Runtime Protection Start =====
+2025-05-21T10:30:12Z: 初始度量中...
+2025-05-21T10:30:12Z: 初始度量： /home/star/tpm/log/../cloud.sh (5775bf6603fe6f6100f79030f969b1fd5735bae62f3913fbf6b7bd0045a2eb85)
+2025-05-21T10:30:12Z: 初始度量： /home/star/tpm/log/../runtime_protect.sh (3de996fc7ee316e8f8c6956f4e7994bf4c6824126655873a3eb3f5508ee445c7)
+2025-05-21T10:30:12Z: 初始度量： /home/star/llama.cpp/build/bin/llama-cli (42f2418b9be2e0cc756cfefecfa61b85ce96a967b925bbab1f6e542aa51e65f7)
+2025-05-21T10:30:13Z: 初始度量： /home/star/llama.cpp/build/bin/llama-server (62fdc96160bffd4a57b97f4e2660538588dd82f2f321203b776a0df79a4fee12)
+2025-05-21T10:30:41Z: 初始度量： /home/star/tpm/log/../models/model.gguf (41226dbf5d40776b5709741099c041d8df59fa465550874f0d06b10979d08822)
+2025-05-21T10:30:41Z: 初始度量： /home/star/tpm/log/test.txt (efdc98e3ab5aadb0cfe6419ca8fb5a02a2c4ecfc1bbc540345c523dd6c82b7ee)
+2025-05-21T10:30:41Z: 初始度量完成，持续监控中...
+2025-05-21T10:30:41Z: ===== Runtime Protection Start =====
+2025-05-21T10:30:41Z: 初始度量中...
+2025-05-21T10:30:41Z: 初始度量： /home/star/tpm/log/../cloud.sh (5775bf6603fe6f6100f79030f969b1fd5735bae62f3913fbf6b7bd0045a2eb85)
+2025-05-21T10:30:41Z: 初始度量： /home/star/tpm/log/../runtime_protect.sh (3de996fc7ee316e8f8c6956f4e7994bf4c6824126655873a3eb3f5508ee445c7)
+2025-05-21T10:30:42Z: 初始度量： /home/star/llama.cpp/build/bin/llama-cli (42f2418b9be2e0cc756cfefecfa61b85ce96a967b925bbab1f6e542aa51e65f7)
+2025-05-21T10:30:42Z: 初始度量： /home/star/llama.cpp/build/bin/llama-server (62fdc96160bffd4a57b97f4e2660538588dd82f2f321203b776a0df79a4fee12)
+2025-05-21T10:31:10Z: 初始度量： /home/star/tpm/log/../models/model.gguf (41226dbf5d40776b5709741099c041d8df59fa465550874f0d06b10979d08822)
+2025-05-21T10:31:10Z: 初始度量： /home/star/tpm/log/test.txt (efdc98e3ab5aadb0cfe6419ca8fb5a02a2c4ecfc1bbc540345c523dd6c82b7ee)
+2025-05-21T10:31:10Z: 初始度量完成，持续监控中...
+2025-05-26T07:33:40Z: Alert: /home/star/tpm/log/../models/model.gguf hash mismatch! (Now: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855)
+2025-05-26T07:33:40Z: [ERROR] 终止服务...
+sudo: 读取密码需要一个终端；请使用 -S 选项以从标准输入进行读取，或者配置一个 askpass 助手程序
+sudo: 需要密码
+2025-05-26T07:33:41Z: 正在清除模型文件...
+2025-05-26T07:33:41Z: 清理完成，服务已终止

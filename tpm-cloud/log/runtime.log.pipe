@@ -1,0 +1,14 @@
+2025-04-22T16:01:21Z: ===== Runtime Protection Start =====
+2025-04-22T16:01:21Z: 初始度量中...
+2025-04-22T16:01:21Z: Initial measured: /home/ubuntu/tpm/log/../cloud_attestation.sh (106fc3834b251376490a1235fabc897baaeb6646f09bf42b9b9a44aed4da82ad)
+2025-04-22T16:01:21Z: Initial measured: /home/ubuntu/tpm/log/../runtime_protect.sh (baf62431cdce35a324475b2328f6c656076d644d9a2fd480f90b59691e9f3b03)
+2025-04-22T16:01:21Z: Initial measured: /home/ubuntu/llama.cpp/vulkan_build/bin/llama-cli (f24bbde5c1c82b5b32e416531071d403ee706c2e6371b6044a47da5b034cae78)
+2025-04-22T16:01:44Z: Initial measured: /home/ubuntu/tpm/log/../models/model.guff (41226dbf5d40776b5709741099c041d8df59fa465550874f0d06b10979d08822)
+2025-04-22T16:01:44Z: Initial measured: /home/ubuntu/tpm/log/test.txt (efdc98e3ab5aadb0cfe6419ca8fb5a02a2c4ecfc1bbc540345c523dd6c82b7ee)
+2025-04-22T16:01:44Z: 初始度量完成，持续监控中...
+2025-04-22T16:05:05Z: Alert: /home/ubuntu/tpm/log/../models/model.guff hash mismatch! (Now: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855)
+2025-04-22T16:05:05Z: Critical: File tamper detected! Terminating service...
+/home/ubuntu/tpm/runtime_protect.sh: line 33:  9268 Killed                  sudo pkill -9 -f "$SERVICE_NAME"
+2025-04-22T16:05:05Z: 正在清除模型文件...
+2025-04-22T16:05:06Z: 清理完成
+2025-04-22T16:05:06Z: Service terminated, TPM context cleared
